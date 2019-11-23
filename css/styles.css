@@ -1,0 +1,89 @@
+body {
+	background: url('../img/bg2.png');
+	z-index: -2;
+}
+
+	/* background-color: #cecece; */
+.container {
+	position: relative;
+}
+
+/* sick trick to make transparent bg */
+.container::after {
+  content: "";
+  background: url('../img/bg.jpg') 50% 50%;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+nav {
+	font-family: 'Orbitron', sans-serif !important;
+}
+
+footer * {
+	color: #777;
+}
+
+footer a:hover {
+	color: #007;
+}
+
+footer {
+	font-family: 'Orbitron', sans-serif !important;
+	background-color: #F8F9FA;
+}
+
+.card {
+	box-shadow: 2px 2px 5px #777;
+}
+
+.card:hover {
+	box-shadow: 4px 4px 9px #000;
+	transition: .6s;
+}
+
+.card-img-top {
+	object-fit: cover !important;
+	max-height: 250px !important;
+	/* width: 100% !important; */
+}
+
+.loginform {
+	width: 80%;
+	max-width: 400px;
+	margin: 0 auto;
+	background: rgba(200,200,200,.8);
+}
+
+.signupform {
+	width: 80%;
+	max-width: 700px;
+	margin: 0 auto;
+	background: rgba(200,200,200,.8);
+	/* box-shadow: 2px 0px 8px #fff; */
+}
+
+.v-center {
+	margin-top: 30vh;
+}
+
+label, form span {
+	font-weight: bold;
+}
+
+/* google maps */
+#map {
+  height: 80%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
