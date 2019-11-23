@@ -1,0 +1,11 @@
+Login with the username or the email.
+
+<!--  LOGIN AS ADMIN -->
+user: Admin
+email: a@a.a
+pass: pass
+
+<!--  LOGIN AS USER -->
+user: User
+email: u@u.u
+pass: pass
